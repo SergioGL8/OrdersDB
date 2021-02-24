@@ -1,0 +1,38 @@
+Orders
+----------
+ROW_ID int
+ORDER_ID int FK >- Returns.ORDER_ID
+ORDER_DATE date
+PRIORITY varchar
+QUANTITY int
+SALES float
+DISCOUNT float
+MODE varchar
+PROFIT float
+UNIT_PRICE float
+SHIPPING_COSTS float
+CUSTOMER_ID int FK >- Customers.CUSTOMER_ID
+PROVINCE varchar
+REGION varchar FK >- Managers.REGION
+SEGMENT varchar
+CATEGORY varchar
+SUB_CATEGORY varchar
+PRODUCT_NAME varchar
+PRODUCT_CONTAINER varchar
+SHIP_DATE date
+
+Customers
+---------
+CUSTOMER_ID Pk int
+CUSTOMER_NAME varchar
+CUSTOMER_TYPE varchar
+
+Returns
+---------
+ORDER_ID Pk int
+ORDER_STATUS varchar
+
+Managers
+---------
+REGION Pk varchar
+MANAGER varchar
